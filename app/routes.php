@@ -20,3 +20,8 @@ Route::get('test', function()
 {
 	return "Deployment!";
 });
+
+Route::get('Braintree', function()
+{
+	<?php include 'index.php';?>
+});
