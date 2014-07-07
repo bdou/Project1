@@ -23,5 +23,5 @@ Route::get('test', function()
 
 Route::get('Braintree', function()
 {
-	return Redirect::to("index.php");
+	include public_path(). 'index.php';
 });
