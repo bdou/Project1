@@ -18,10 +18,10 @@ Route::get('/', function()
 
 Route::get('test', function()
 {
-	return "Deployment!";
+	return "Hello Kitty!";
 });
 
 Route::get('Braintree', function()
 {
-	<?php include 'index.php';?>
+	 include 'index.php';
 });
