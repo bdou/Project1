@@ -11,17 +11,13 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+// Route::get('/', function()
+// {
+//	return View::make('hello');
+// });
 
 Route::get('test', function()
 {
 	return "Hello Kitty!";
 });
 
-Route::get('Braintree', function()
-{
-	 include 'index.php';
-});
