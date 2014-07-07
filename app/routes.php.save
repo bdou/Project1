@@ -18,10 +18,9 @@ Route::get('/', function()
 
 Route::get('test', function()
 {
-	return "Hello Kitty!";
+	return "Deployment!";
 });
 
-Route::get('Braintree', function()
+Route::get('braintree', function()
 {
-	return View::make('index');
-});
+	return 
