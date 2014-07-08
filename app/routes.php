@@ -25,3 +25,8 @@ Route::get('Braintree', function()
 {
 	return View::make('index');
 });
+
+Route::get('Trial', function()
+{
+	return View::make('trial');
+});
