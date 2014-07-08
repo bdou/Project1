@@ -1,6 +1,6 @@
 <?php
 
-require_once '/home/bridget/braintree-php-2.27.2/lib/Braintree';
+require_once '/home/bridget/braintree-php-2.27.2/lib/Braintree.php';
 
 Braintree_Configuration::environment('sandbox');
 Braintree_Configuration::merchantId('pxjknn5sr7xpw779');
@@ -11,8 +11,8 @@ $result = Braintree_Transaction::sale(array(
 	"amount" => "1000.00",
 	"creditCard" => array(
 		"number" => $_POST["number"],
-		"cvv" => $_POST["cvv"]
-		"expirationMonth" => $_POST["month"]
+		"cvv" => $_POST["cvv"],
+		"expirationMonth" => $_POST["month"],
 		"expirationYear" => $_POST["year"]
 	),
 	"options" => array(
@@ -29,7 +29,7 @@ if ($result->success) {
 } else {
 	echo("Validation errors:<br/>");
 	foreach (($result->errors->deepAll()) as $error) {
-		echo("- " . $error->message . "<br/>";
+		echo("- " . $error->message . "<br/>");
 	}
 }
 ?>
