@@ -2,7 +2,7 @@
 	<head>
 	</head>
 	<body>
-		<h1>Braintree Credit Card Transactioin Form</h1>
+		<h1>Braintree Credit Card Transaction Form</h1>
 		<div>
 			<form action="transaction.php" method="POST" id="braintree-payment-form">
 				<p>
