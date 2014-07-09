@@ -1,11 +1,11 @@
 <?php
 
-require_once "/home/bridget/braintree-php-2.27.2/lib/Braintree.php";
+require_once '/home/bridget/Project/braintree-php-2.27.2/lib/Braintree.php';
 
-Braintree_Configuration::environment("sandbox");
-Braintree_Configuration::merchantId("pxjknn5sr7xpw779");
-Braintree_Configuration::publicKey("nxmnjtjfj2hn8xky");
-Braintree_Configuration::privateKey("954afde50d7e27c41616f60b93f7ddeb");
+Braintree_Configuration::environment('sandbox');
+Braintree_Configuration::merchantId('pxjknn5sr7xpw779');
+Braintree_Configuration::publicKey('nxmnjtjfj2hn8xky');
+Braintree_Configuration::privateKey('954afde50d7e27c41616f60b93f7ddeb');
 
 $result = Braintree_Transaction::sale(array(
 	"amount" => "1000.00",

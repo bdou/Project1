@@ -1,6 +1,6 @@
 <?php
 
-require_once '/home/bridget/braintree-php-2.27.2/lib/Braintree.php';
+require_once '/home/bridget/Project/braintree-php-2.27.2/lib/Braintree.php';
 
 Braintree_Configuration::environment('sandbox');
 Braintree_Configuration::merchantId('pxjknn5sr7xpw779');
