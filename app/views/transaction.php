@@ -8,14 +8,14 @@ Braintree_Configuration::publicKey('nxmnjtjfj2hn8xky');
 Braintree_Configuration::privateKey('954afde50d7e27c41616f60b93f7ddeb');
 
 $result = Braintree_Transaction::sale(array(
-	"amount" => "1000.00",
-	"creditCard" => array(
-		"number" => $_POST["number"],
-		"cvv" => $_POST["cvv"],
-		"expirationMonth" => $_POST["month"],
-		"expirationYear" => $_POST["year"]
+	'amount' => '1000.00',
+	'creditCard' => array(
+		'number' => $_POST["number"],
+		'cvv' => $_POST["cvv"],
+		'expirationMonth' => $_POST["month"],
+		'expirationYear' => $_POST["year"]
 	),
-	"options" => array(
+	'options' => array(
 		"submitForSettlement" => true
 	)
 ));

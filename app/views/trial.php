@@ -11,6 +11,7 @@ $result = Braintree_Transaction::sale(array(
     'amount' => '1000.00',
     'creditCard' => array(
         'number' => '4111111111111111',
+	'cvv' => '111',
         'expirationMonth' => '05',
         'expirationYear' => '12'
     )
