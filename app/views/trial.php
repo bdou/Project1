@@ -18,7 +18,7 @@ $result = Braintree_Transaction::sale(array(
 ));
 
 if ($result->success) {
-    print_r("success!: " . $result->transaction->id);
+    print_r("Success!: Your Transaction ID is: " . $result->transaction->id);
 } else if ($result->transaction) {
     print_r("Error processing transaction:");
     print_r("\n  message: " . $result->message);
