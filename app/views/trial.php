@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Project/braintree-php-2.27.2/lib/Braintree.php';
+require_once 'Braintree/lib/Braintree.php';
 
 Braintree_Configuration::environment('sandbox');
 Braintree_Configuration::merchantId('pxjknn5sr7xpw779');
@@ -18,7 +18,7 @@ $result = Braintree_Transaction::sale(array(
 ));
 
 if ($result->success) {
-    print_r("Success!: Your Transaction ID is: " . $result->transaction->id);
+    print_r("Success!: Your Transaction ID is " . $result->transaction->id);
 } else if ($result->transaction) {
     print_r("Error processing transaction:");
     print_r("\n  message: " . $result->message);
